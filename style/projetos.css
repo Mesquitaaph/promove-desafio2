@@ -1,0 +1,51 @@
+.container-projetos {
+  background-color: #010101;
+  color: #F9F9F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 240px;
+}
+
+.container-projetos-conteudo {
+  display: flex;
+  flex-direction: column;
+
+  gap: 128px;
+}
+
+.container-projetos-texto {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.container-projetos-fotos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 109px;
+}
+
+.container-projeto-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-projeto-titulo {
+  color: #F9F9F9;
+  font-family: inter;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+#preenchimento {
+  width: 100%;
+  height: 200px;
+  background-color: #010101;
+}

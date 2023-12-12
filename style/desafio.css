@@ -1,0 +1,147 @@
+body {
+  background-color: var(--main-bg);
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+p, a, span, button {
+  font-family: inter;
+  color: white;
+}
+
+.historia {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  align-items: center;
+}
+
+h1.historia {
+  margin-bottom: 40px;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  height: calc(80vw * 9 / 16); /* Altura baseada na largura para manter proporção 9:16 */
+  margin: 10vh auto; /* Centraliza na tela */
+  background: url('../assets/cenario.png') no-repeat center center;
+  background-size: cover;
+}
+
+.personagens {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.personagem {
+  width: calc(25% - 20px); /* Largura dos personagens (25% do contêiner com espaçamento) */
+  height: calc((calc(25% - 20px)) * 1092 / 540); /* Altura baseada na largura para manter proporção 9:16 */
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#personagem1 {
+  background-image: url('../assets/bigodon.png'); /* URL da imagem do personagem 1 */
+}
+
+#personagem2 {
+  background-image: url('../assets/minino.png'); /* URL da imagem do personagem 2 */
+}
+
+#personagem3 {
+  background-image: url('../assets/moca.png'); /* URL da imagem do personagem 3 */
+}
+
+#personagem4 {
+  background-image: url('../assets/robo.png'); /* URL da imagem do personagem 4 */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.mensagem {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+
+.button-img {
+  width: 128px;
+  height: 128px;
+  padding: 10px 0px;
+  margin: 5px;
+}
+
+
+.buttons {
+  margin-top: 20px;
+  margin-left: 10%;
+}
+
+.container1 {
+  margin-bottom: 40px;
+}
+
+.container1 h1 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#playButton{
+  /* Centralizando o botão horizontalmente */
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 16px;
+
+  /* Aumentando o tamanho do botão */
+  padding: 20px 40px; /* Altere os valores de padding conforme necessário para aumentar o tamanho */
+  font-size: 25px;
+
+  /* Definindo a cor do texto e do fundo */
+  color: white; /* Cor do texto */
+  background-color: blue; /* Cor de fundo do botão */
+
+  /* Estilizando bordas e cantos */
+  border: none; /* Removendo a borda */
+  border-radius: 5px; /* Arredondando os cantos */
+  
+  /* Adicionando efeito de hover (quando passa o mouse por cima) */
+  transition: background-color 0.3s ease;
+}
+
+#playButton:hover {
+  background-color: darkblue; /* Altere a cor de fundo para quando o mouse passar por cima */
+}
