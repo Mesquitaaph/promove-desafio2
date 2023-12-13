@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/aprendizados.css">
+
+    <title>ProMove Desafio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="left">
+                    <h1 class="header-left">BitIQ</h1>
+                </div>
+                <div class="center">
+                    <ul class="header-center">
+                        <li>
+                            <a href="./index.html">
+                                <span class="Inicio">Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="aprendizados.html">Aprendizados</a>
+                        </li>
+                        <li>
+                            <a href="desafio.html">Desafios</a>
+                        </li>
+                        <li>
+                            <a href="tradutor.html">Tradutor</a>
+                        </li>
+                        <li>
+                            <a href="quemsomos.html">Quem Somos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul class="header-right">
+                        <li>
+                            <a href="mailto:promove@dcc.ufrj.br">
+                                <img src="assets/logos/Mail-Icon.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com">
+                                <img src="assets/logos/Linkedin-Icon.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <img src="assets/logos/Twitter-Icon.png">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/">
+                                <img src="assets/logos/Instagram-Icon.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+        </nav>
+        
+    </header>
+
+    <section class="cardTopico">
+        <h1 class="tituloTopico">SISTEMA DE NUMERAÇÃO</h1>
+        <p class="conteudoTopico">
+            Um sistema de numeração é a organização e representação dos algarismos.<br>
+            O nosso sistema de numeração é o decimal e possui base 10, ou seja, 10 dígitos de representação (0 a 9) para os números. Já o sistema de numeração binário possui base 2 e usa apenas 2 dígitos: 0 e 1.<br>
+            Os dois sistemas são considerados posicionais, onde cada dígito tem valor posicional.<br>
+            Exemplo: 104 e 345.<br>
+            Os dois números possuem o dígito 4, porém no primeiro possui o valor de 4 unidades, já no segundo, possui o valor de 4 dezenas ou 40.
+        </p>
+    </section>
+
+    <section class="cardTopico">
+        <h1 class="tituloTopico">CONVERSÃO BINÁRIO <-> DECIMAL</h1>
+        <p class="conteudoTopico">
+            Para converter um número binário para base 10(decimal), basta decompor o número binário.<br>
+            Exemplo: 10100 na base 2.<br>
+            0 × 2^0 + 0 × 2^1 + 1 × 2^2 + 0 × 2^3 + 1 × 2^4 = 2^2 + 2^4 = 4 + 16 = 20<br>
+            Lembrando que o valor do expoente equivale a posição de cada dígito começando da direita para a esquerda, a partir do 0.<br>
+            <br>
+            Para converter um número decimal para base 2, utilizaremos o método de divisões sucessivas, que consiste em dividir o número a ser convertido por 2 de maneira a obter o resto que equivale a posição 0(posição mais a direita) e repetir o processo.<br>
+            Exemplo: 25.<br>
+            Posição 0 -> Divida 25 por 2. Resultado é 12 e o resto é 1.<br>
+            Posição 1 -> Divida 12 por 2. Resultado é 6 e o resto é 0.<br>
+            Posição 2 -> Divida 6 por 2. Resultado é 3 e o resto é 0.<br>
+            Posição 3 -> Divida 3 por 2. Resultado é 1 e o resto é 1.<br>
+            Posição 4 -> Divida 1 por 2. Resultado é 0 e o resto é 1.<br>
+            Assim, 25 em decimal é 11001 em binário.<br>
+        </p>
+    </section>
+
+    <section class="cardTopico" id="relacao">
+        <div id="anchorRel"></div>
+        <h1 class="tituloTopico">RELAÇÃO NÚMEROS BINÁRIOS E COMPUTADOR</h1>
+        <p class="conteudoTopico">
+            Para entender a relação entre os binários e o computador, é importante saber que cada dígito de um número binário(0 ou 1) é chamado de bit.<br>
+            Computadores armazenam e recuperam dados em forma de bits. O conjunto de 8 bits é chamado de byte, que pode representar até 256 valores diferentes.<br>
+            O computador armazena esses bytes na memória principal e esses dados armazenados são interpretados pelo processador (ou CPU - central processing unit) que também executa as operações lógicas e aritméticas.<br>
+            Entender essa relação é crucial para qualquer pessoa envolvida no meio tecnológico. Tendo como objetivo entender como a informação é processada e armazenada nos níveis básicos do sistema computacional.<br>
+        </p>
+    </section>
+
+    <section class="cardTopico" id="tabela">
+        <div id="anchorTab"></div>
+        <h1 class="tituloTopico">TABELA ASCII (American Standard Code for Information Interchange)</h1>
+        <p class="conteudoTopico">
+            Toda informação para ser armazenada em um computador precisa de uma representação binária.<br>
+            A tabela ASCII é um conjunto de códigos numéricos que atribui um único número para cada caractere (letras maiúsculas e minúsculas, números, pontuações e caracteres especiais).<br>
+            Um código ASCII é a representação numérica de um caractere.<br>
+            Exemplo: O código ASCII para a letra 'A' é 01000001 em binário.<br>
+            Essa tabela foi inicialmente criada apenas com a representação dos números, as 26 letras do alfabeto inglês e alguns caracteres especiais e de controle, porém, para suprir a necessidade de incluir caracteres de outros alfabetos, foi futuramente expandida para 256 caracteres, todos com 8 bits.<br>
+            Cabe dizer que o padrão ASCII ainda não atendia idiomas, como árabe e chinês, e por isso, houve a criação de novos padrões, sendo o mais universal, a representação Unicode.<br>
+        </p>
+    </section>
+
+    <section class="cardTopico">
+        <h1 class="tituloTopico">CONVERSÃO TEXTO <-> BINÁRIO</h1>
+        <p class="conteudoTopico">
+            Para realizar a conversão de texto para binário basta seguir alguns passos.<br>
+            1. Obter o código ASCII de cada caracter do texto.<br>
+            2. Converter cada código ASCII para binário.<br>
+            3. Combinar as representações binárias.<br>
+            <br>
+            Exemplo: Convertendo a palavra "TEXTO".<br>
+            1. Obter os códigos na tabela ASCII:<br>
+            T:84 E:69 X:88 O:79<br>
+            2. Converter para binário utilizando o método ensinado.<br>
+            T:01010100 E:01000101 X:01011000 T:01010100 O:01001111<br>
+            3. Unir os binários:<br>
+            01010100 01000101 01011000 01010100 01001111<br>
+            <br>
+            Para converter de Binário para texto, basta seguir os passos inversos:<br>
+            1. Dividir a sequência binário em blocos de 8 bits.<br>
+            2. Converter cada byte para decimal.<br>
+            3. Obter cada caractere correspondete ao código ASCII<br>
+            4. Unir os caracteres e formar o texto.<br>
+        </p>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-superior">
+                <h1>PROMOVE</h1>
+                <h1>IC/UFRJ</h1>
+            </div>
+            <div class="footer-inferior">
+                <p>Desenvolvedores Ao Seu Dispor</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

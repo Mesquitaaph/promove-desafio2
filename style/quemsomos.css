@@ -1,0 +1,18 @@
+body {
+  display: grid;
+
+  min-height: 100vh;
+}
+
+footer {
+  justify-self: flex-start;
+  width: 100vw;
+}
+
+.footer {
+  width: 40%;
+}
+
+.footer-inferior p {
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+.cardTopico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 16px;
+
+  color: white;
+
+  padding: 32px;
+  margin: 16px 0;
+
+  /* box-shadow: 2px 2px 5px #00000046; */
+  position: relative;
+}
+
+
+.cardTopico:nth-child(even) {
+  background-color: #11635c;
+}
+
+.cardTopico:nth-child(2) {
+  margin-top: 0;
+}
+
+.cardTopico:nth-child(6) {
+  margin-bottom: 0;
+}
+
+.tituloTopico {
+  font-family: Poppins;
+  font-size: 24px;
+}
+
+.conteudoTopico {
+  font-family: inter;
+  font-size: 16px;
+  line-height: 20px;
+
+  width: 70%;
+}
+
+#anchorRel {
+  position: absolute;
+  top: -108px
+}
+
+#anchorTab {
+  position: absolute;
+  top: -108px
+}
