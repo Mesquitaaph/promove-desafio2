@@ -5,6 +5,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  box-shadow: 2px 2px 10px #00000046;
+
+  padding: 32px;
+
+  font-family: inter;
+}
+
+h1 {
+  font-family: Poppins;
+  font-size: 24px;
+  color: var(--primary-color);
 }
 
 .inputContainerAlign {
@@ -30,6 +42,11 @@
 
   border-radius: 16px;
   padding: 16px;
+
+}
+
+textarea:focus {
+  outline: none;
 }
 
 .inputContainer button {
@@ -59,7 +76,6 @@
 
   overflow-y: auto; /* Adiciona barra de rolagem vertical quando necessário */
 
-  font-family: inter;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
 }

@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
-    <!-- <link rel="stylesheet" href="style/main.css"> -->
-    <link rel="stylesheet" href="style/desafio.css">
     <link rel="stylesheet" href="style/tradutor.css">
 
     <title>ProMove Desafio</title>
@@ -68,66 +66,18 @@
                 </div>   
             </div>
         </nav>
-        
     </header>
-
-    <h1 class="historia"> Desafio 1: Testemunha Binária </h1>
-
-    <div class="historia">
-        <img src="assets/historia.png" alt="História dos Personagens">
-    </div>
-    <h1 class = "historia">Você pode ajudar Dorivaldo a descobrir o assassino?</h1>
 
     <div id = 'tradutor'>
         <div class="inputContainerAlign">
             <h1>Tradutor Binário <-> Ascii</h1>
             <div class="inputContainer">
-                <button id="toggleButton" onclick="toggleConversion()">Inverter (Binario -> Ascii)</button>
+                <button id="toggleButton" onclick="toggleConversion()">Inverter (Ascii -> Binario)</button>
                 <textarea id="inputText" placeholder="Digite seu texto em ASCII ou binário"></textarea>
                 <button id="convertButton" onclick="convertText()">Converter para Binário</button>
             </div>
             <div id="result"></div>
         </div>
-    </div>
-
-    <div class="container">
-        <div class="personagens">
-            <div class="personagem" id="personagem1"></div>
-            <div class="personagem" id="personagem2"></div>
-            <div class="personagem" id="personagem3"></div>
-            <div class="personagem" id="personagem4"></div>
-        </div>
-        <div class="overlay" id="overlay">
-            <div class="mensagem" id="mensagem"></div>
-        </div>
-    </div>
-
-
-    <div class="container1">
-        <h1>Desafio 2: Trabalhador eficiente</h1>
-
-        <div class="historia">
-        <img src="assets/historia2.png" alt="História dos Personagens">
-        </div>
-
-        <button id="playButton">Jogar</button>
-        <h1>Pontuação: <span id="score"></span></h1>
-        <div class="buttons">
-            <img src="assets/placas/placa0.png" class="button-img" onclick="toggleButton(0)" id="btn0">
-            <img src="assets/placas/placa0.png" class="button-img" onclick="toggleButton(1)" id="btn1">
-            <img src="assets/placas/placa0.png" class="button-img" onclick="toggleButton(2)" id="btn2">
-            <img src="assets/placas/placa0.png" class="button-img" onclick="toggleButton(3)" id="btn3">
-            <img src="assets/placas/placa0.png" class="button-img" onclick="toggleButton(4)" id="btn4">
-            <img src="assets/placas/placa0.png" class="button-img" onclick="toggleButton(5)" id="btn5">
-            <img src="assets/placas/placa0.png" class="button-img" onclick="toggleButton(6)" id="btn6">
-            <img src="assets/placas/placa0.png" class="button-img" onclick="toggleButton(7)" id="btn7">
-            <img src="assets/placas/placa0.png" class="button-img" onclick="toggleButton(8)" id="btn8">
-            <img src="assets/placas/placa0.png" class="button-img" onclick="toggleButton(9)" id="btn9">
-        </div>
-        
-        <h1>Valor em Decimal Atual:&ensp;<span id="decimalValue">0</span></h1>
-        <h1>Próxima Senha:&ensp;<span id="randomNumber"></span></p>
-        <h1>Tempo Restante:&ensp;<span id="timer"></span></h1>
     </div>
     
     <footer>

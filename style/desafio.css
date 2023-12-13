@@ -100,6 +100,8 @@ h1.historia {
   height: 128px;
   padding: 10px 0px;
   margin: 5px;
+  
+  cursor: pointer;
 }
 
 
@@ -132,16 +134,21 @@ h1.historia {
 
   /* Definindo a cor do texto e do fundo */
   color: white; /* Cor do texto */
-  background-color: blue; /* Cor de fundo do botão */
+  background-color: #D89845; /* Cor de fundo do botão */
 
   /* Estilizando bordas e cantos */
   border: none; /* Removendo a borda */
-  border-radius: 5px; /* Arredondando os cantos */
+  border-radius: 8px; /* Arredondando os cantos */
   
   /* Adicionando efeito de hover (quando passa o mouse por cima) */
   transition: background-color 0.3s ease;
+
+  box-shadow: 2px 2px 10px #00000046;
+  font-family: inter;
+
+  cursor: pointer;
 }
 
 #playButton:hover {
-  background-color: darkblue; /* Altere a cor de fundo para quando o mouse passar por cima */
+  background-color: #96692f; /* Altere a cor de fundo para quando o mouse passar por cima */
 }
